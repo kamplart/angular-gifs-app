@@ -1,0 +1,35 @@
+<div class="row">
+
+  <div *ngFor="let gif of gifs" class="col-md-3 cpl-sm-6">
+
+    <div  class="card mb-2 text-centes bg-dark">
+
+<img
+  [src]="gif.images.downsized_medium.url"
+  [alt]="gif.title"
+      class="card-img-top"
+>
+
+
+      <div class="card-body text-white">
+        <p class="card-text">
+          {{gif.title}}
+        </p>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- <ul>
+      <li>primero</li>
+      <li>segundo</li>
+      <li>tercero</li>
+      <li>cuarto</li>
+    </ul> -->
+
+</div>
+
+</div>
+
